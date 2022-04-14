@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+  } 
+
+
+body{ 
+     font:normal 75% Arial, Helvetica, sans-serif;
+    
+}
+
+canvas{ 
+    display: block; 
+    vertical-align: bottom; 
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}      
+
+.paginas{
+    margin-bottom: 60px;
+}
+
+
+#particles-js{ 
+    background-color: #1e1e1e; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.paginas a{
+    text-decoration: none;
+}
+
+.paginas a{
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+    color:rgb(192, 125, 1);
+    font-size: 20px;
+}
+
+.paginas a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: gray;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .paginas a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.title h1{
+    color: rgb(192, 125, 1);
+    font-size: 40px;
+}
+
+.desafio1, .desafio2, .animes, .conversor, .trunfo{
+    margin:50px
+}
+
+.projetos{
+    display:inline;
+    justify-content: center;
+    align-content: center;
+}
+
+.projetos img{
+    max-width: 450px;
+    border: gray solid 2px;
+}
+
+.desafio1:hover img, .desafio2:hover img, .animes:hover img, .conversor:hover img, .trunfo:hover img{
+    opacity: 0.3;  
+    border: rgb(192, 125, 1) solid 3px;
+}
+
+.projetos h1{
+    color: rgb(192, 125, 1);
+}
+
+.projetos h2{
+    color: gray;
+    margin-top: 10px;
+}
+
+.a-projetos{
+    text-decoration: none;
+    color: rgb(192, 125, 1);
+}
+
+.a-projetos:hover{
+    text-decoration: underline;
+}
+
+.footer {   
+    width: 100%;
+    background-color: black;
+    color:rgb(192, 125, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+
+.footer a{
+    text-decoration: none;
+    color: rgb(192, 125, 1);
+}
+
+.footer-social img{
+    max-width: 20px;
+}
+
+.footer-servicos, .footer-social, .footer-contato{
+    margin-right: 30px;
+}
+
+.copy{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color:gray;
+    font-size: 5px;
+    align-items: center;
+}
+
+.tema button{
+    margin: 10px;
+    height: 35px;
+    width: 100px;
+    border:rgb(192, 125, 1) 1px solid;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: rgb(192, 125, 1);
+}
+
+.tema button:hover{
+    opacity: 50%;
+    transition: 0.8s;
+}
+
+.dark .tema button{
+    margin: 10px;
+    height: 35px;
+    width: 100px;
+    border:black 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.dark #particles-js{ 
+    background-color: #fff; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dark .footer {   
+    width: 100%;
+    background-color: rgb(192, 125, 1);
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    }
+
+.dark .footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.dark .footer-social img{
+    filter: grayscale(0%);
+    filter: saturate(0%);
+    filter: brightness(0%);
+}
+
+.dark .copy{
+    background-color: rgb(192, 125, 1);
+    color: black;
+}
+
+.dark .projetos h1{
+    color: black;
+}
+
+.dark .projetos h2{
+    color: black;
+}
+
+.dark .title h1{
+    color: black;
+}
+
+.dark .paginas a{
+    color:black;
+}
+
+.dark .paginas a:after {    
+    background: rgb(192, 125, 1);
+}
